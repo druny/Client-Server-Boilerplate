@@ -1,0 +1,3 @@
+baseUrl: localhost:3000
+port: 8740
+mongo: mongodb://localhost/yourDb
