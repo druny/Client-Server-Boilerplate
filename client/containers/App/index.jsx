@@ -8,6 +8,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import { browserHistory } from 'react-router';
 
 import { defaultAction } from '../../actions/test';
 import HelloWorldRedux from '../../containers/HelloWorldRedux';
@@ -35,7 +36,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router history={browserHistory}>
         <div className="app">
           <Header />
           <Switch>

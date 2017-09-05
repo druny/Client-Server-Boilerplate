@@ -5,9 +5,10 @@ import DocMonitor from 'redux-devtools-dock-monitor';
 
 export default createDevTools(
   <DocMonitor
-    toggleVisibilityKey="ctrl-h"
-    changePositionKey="ctrl-w"
+    toggleVisibilityKey="ctrl-i"
+    changePositionKey="ctrl-y"
+    defaultIsVisible
   >
-    <LogMonitor />
+    <LogMonitor theme="tomorrow" />
   </DocMonitor>,
 );
